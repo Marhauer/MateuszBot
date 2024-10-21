@@ -24,10 +24,10 @@ client.on('messageCreate', (msg) => {
         return;
     }
 
-    let x = 10; 
+    let x = 0; 
     while(x < 30) {
-    if(msg.author.username === 'juritard') {
-        msg.reply(`${x}`);
+    if(msg.author.username === 'meowzer4k') {
+        msg.reply("✅");
         x++;
     }
     }
