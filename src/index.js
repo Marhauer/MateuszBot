@@ -24,7 +24,7 @@ client.on('messageCreate', (msg) => {
         return;
     }
 
-    let x = 0; 
+    let x = 10; 
     while(x < 30) {
     if(msg.author.username === 'juritard') {
         msg.reply(`${x}`);
