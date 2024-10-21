@@ -26,7 +26,7 @@ client.on('messageCreate', (msg) => {
 
 
     if(msg.author.username === 'meowzer4k') {
-        msg.reply("This message was certified by Mateusz");
+        msg.reply("This message was certified by Mateusz!");
     }
 
     if(msg.content === 'Hey') {
