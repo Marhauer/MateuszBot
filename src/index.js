@@ -24,12 +24,9 @@ client.on('messageCreate', (msg) => {
         return;
     }
 
-    let x = 0; 
-    while(x < 30) {
+
     if(msg.author.username === 'meowzer4k') {
-        msg.reply("✅");
-        x++;
-    }
+        msg.reply("certified by Mateusz");
     }
 
     if(msg.content === 'Hey') {
