@@ -1,8 +1,8 @@
 require('dotenv').config();
-const { Client, IntentsBitField } = require('discord.js'); //Client = Bot
+const { Client, IntentsBitField } = require('discord.js');
 
-//https://discord.com/developers/docs/topics/gateway#list-of-intents
-const client =  new Client({
+// Client = Bot
+const client = new Client({
     intents: [
         IntentsBitField.Flags.Guilds,
         IntentsBitField.Flags.GuildMembers,
@@ -14,25 +14,44 @@ const client =  new Client({
 
 client.on('ready', (c) => {
     console.log(`✅ ${c.user.tag} is online.`);
-})
+});
 
+const admin = ['967544510630494298', '527883760587505730', '1114948114193850388'];
+
+// Message handler
 client.on('messageCreate', (msg) => {
-
-    console.log(msg);
-
-    if(msg.author.bot) {
+    // Ignore bot messages
+    if (msg.author.bot) {
         return;
     }
 
-
-    if(msg.author.username === 'meowzer4k') {
-        msg.reply("This message was certified by Mateusz!");
+    if (msg.content === 'attack maeu') {
+        let x = 0;
+        while(x < 10) {
+            msg.channel.send("<@508324225807941632> https://tenor.com/view/trump-on-a-tank-american-flag-america-tank-trump-gif-3748826537574782585");            
+            x++;
+        }
     }
 
-    if(msg.content === 'Hey') {
-        msg.reply('Hello!');
+    if (msg.author.id === '527883760587505730') {
+        msg.react("🤓");
+        msg.reply("https://tenor.com/view/mod-discord-mod-nerd-glasses-speech-bubble-gif-27462011");
     }
+
+    if (msg.author.id === '527883760587505730') {
+        msg.react("🚗");
+    }
+
+    if (msg.author.id === '967544510630494298') {
+        msg.react("👑");
+    } 
+
+    if (msg.author.id === '1114948114193850388') {
+        msg.react("😎");
+    }
+
+
 });
 
-//Token
+// Token
 client.login(process.env.TOKEN);
