@@ -43,7 +43,7 @@ client.on('messageCreate', (msg) => {
     }
 
     if (msg.author.id === '967544510630494298') {
-        msg.react("👑");
+        msg.react("😊");
     } 
 
     if (msg.author.id === '1114948114193850388') {
