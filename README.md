@@ -1,1 +1,1 @@
-Mateusz is a test bot created for feature testing and learning how to develop Discord bots.
+Mateusz is a versatile bot built for annoying Mateusz because he is never in voice chat with us.
